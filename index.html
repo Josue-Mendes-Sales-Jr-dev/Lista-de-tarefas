@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+     <div class="header">
+         <h1>Lista de Tarefas</h1>
+     </div>
+     <hr>
+     <form class="form" id="todo-form">
+        <div class="form-control01">
+            <label for="Do">Insira sua tarefa</label>
+            <div>
+                <input type="text" id="todo-input"
+                 placeholder="o que você vai fazer?">
+                 <button type="submit"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+        </form>
+        <hr>
+
+        <form class="edit-form" id="edit-form">
+            <div class="edit-form01">
+                <label for="edit-frase">Editar</label>
+                <div>
+                    <input type="text" id="edit-input">
+                     <button type="button"><i class="fa-regular fa-check-double"></i></button>
+                     <button type="button" id="cancel-edit-btn">Cancelar</button>
+                </div>
+            </div>
+        </form>
+          <hr>
+         <div class="box">
+             <div class="toolbar" id="toolbar">
+                <div id="search">
+                    <form>
+    
+                        <input type="search" id="search-input" placeholder="buscar...">
+                        <button type="submit" id="erase-button"><</button>
+                    </form>
+                </div>
+                     </div>
+                <div class="filter" id="filter">
+                    <h4>Filtro</h4>
+             
+                        <select id="filter-select">
+                            <option value="all">Todos</option>
+                            <option value="done">Feito</option>
+                            <option value="do">A fazer</option>
+                        </select>          
+                     
+                     </div>
+         </div>
+
+        <div class="form-control" id="todo-list">
+
+           
+
+        </div>
+
+     
+    </div>
+    <script src="https://kit.fontawesome.com/30c31e337d.js" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
